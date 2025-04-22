@@ -3,9 +3,9 @@ package consumerscreen
 import (
 	"context"
 
-	"github.com/lawmatsuyama/protogui/models"
-	"github.com/lawmatsuyama/protogui/service"
-	"github.com/lawmatsuyama/protogui/view/object"
+	"github.com/arke-dev/protogui/models"
+	"github.com/arke-dev/protogui/service"
+	"github.com/arke-dev/protogui/view/object"
 
 	"fyne.io/fyne/v2"
 )

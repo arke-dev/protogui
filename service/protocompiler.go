@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/arke-dev/protogui/helpers"
 	"github.com/bufbuild/protocompile"
-	"github.com/lawmatsuyama/protogui/helpers"
 
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

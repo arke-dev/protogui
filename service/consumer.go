@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/lawmatsuyama/protogui/infra"
-	"github.com/lawmatsuyama/protogui/models"
+	"github.com/arke-dev/protogui/infra"
+	"github.com/arke-dev/protogui/models"
 )
 
 type Consumer interface {

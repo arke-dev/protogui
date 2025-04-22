@@ -8,14 +8,14 @@ import (
 
 	"golang.design/x/clipboard"
 
-	"github.com/lawmatsuyama/protogui/infra"
-	"github.com/lawmatsuyama/protogui/service"
-	"github.com/lawmatsuyama/protogui/view/consumerscreen"
-	"github.com/lawmatsuyama/protogui/view/grpcscreen"
-	"github.com/lawmatsuyama/protogui/view/protocscreen"
+	"github.com/arke-dev/protogui/infra"
+	"github.com/arke-dev/protogui/service"
+	"github.com/arke-dev/protogui/view/consumerscreen"
+	"github.com/arke-dev/protogui/view/grpcscreen"
+	"github.com/arke-dev/protogui/view/protocscreen"
 
-	"github.com/lawmatsuyama/protogui/view/tabs"
-	customTheme "github.com/lawmatsuyama/protogui/view/theme"
+	"github.com/arke-dev/protogui/view/tabs"
+	customTheme "github.com/arke-dev/protogui/view/theme"
 )
 
 func main() {

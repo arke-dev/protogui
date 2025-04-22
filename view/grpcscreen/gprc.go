@@ -5,9 +5,9 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/theme"
-	"github.com/lawmatsuyama/protogui/models"
-	"github.com/lawmatsuyama/protogui/service"
-	"github.com/lawmatsuyama/protogui/view/object"
+	"github.com/arke-dev/protogui/models"
+	"github.com/arke-dev/protogui/service"
+	"github.com/arke-dev/protogui/view/object"
 )
 
 type GRPCScreen struct {

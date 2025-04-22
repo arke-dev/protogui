@@ -7,10 +7,10 @@ import (
 	"fyne.io/fyne/v2/container"
 
 	"fyne.io/fyne/v2/widget"
-	"github.com/lawmatsuyama/protogui/view/consumerscreen"
-	"github.com/lawmatsuyama/protogui/view/grpcscreen"
+	"github.com/arke-dev/protogui/view/consumerscreen"
+	"github.com/arke-dev/protogui/view/grpcscreen"
 
-	"github.com/lawmatsuyama/protogui/view/protocscreen"
+	"github.com/arke-dev/protogui/view/protocscreen"
 )
 
 type Screen interface {

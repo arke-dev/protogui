@@ -1,4 +1,4 @@
-module github.com/lawmatsuyama/protogui
+module github.com/arke-dev/protogui
 
 go 1.23.2
 

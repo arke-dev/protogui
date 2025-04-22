@@ -3,7 +3,7 @@ package infra
 import (
 	"context"
 
-	"github.com/lawmatsuyama/protogui/models"
+	"github.com/arke-dev/protogui/models"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
