@@ -129,10 +129,15 @@ func (p *protoCompiler) RegisterProto(path string) error {
 	}
 
 	home := os.Getenv("HOME")
+	commonProto := os.Getenv("COMMON_PROTO")
+	if commonProto == "" {
+		commonProto = home + "/go/src/github.com/arke-dev/baas-contract/common/proto"
+	}
 
 	importPaths := []string{
 		path,
 		home + "/.local/include",
+		commonProto,
 		"/usr/include",
 	}
 
@@ -169,6 +174,20 @@ func (p *protoCompiler) RegisterProto(path string) error {
 			files = append(files, entry.Name())
 		}
 	}
+
+	entries2, err := os.ReadDir(commonProto)
+	if err != nil {
+		return fmt.Errorf("failed to read dir %w", err)
+	}
+
+	files2 := make([]string, 0)
+	for _, entry2 := range entries2 {
+		if !entry2.IsDir() && (strings.Contains(entry2.Name(), ".proto")) {
+			files2 = append(files2, entry2.Name())
+		}
+	}
+
+	files = append(files, files2...)
 
 	p.mux.Lock()
 	defer p.mux.Unlock()
